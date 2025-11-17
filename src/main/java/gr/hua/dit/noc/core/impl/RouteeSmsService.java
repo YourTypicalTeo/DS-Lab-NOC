@@ -40,6 +40,8 @@ public class RouteeSmsService implements SmsService {
         this.routeeProperties = routeeProperties;
     }
 
+    // TODO Not working.
+    @SuppressWarnings("rawtypes")
     @Cacheable("routeeAccessToken")
     public String getAccessToken() {
         LOGGER.info("Requesting Routee Access Token");
